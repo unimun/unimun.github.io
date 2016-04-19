@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Python을 이용해 exe파일 만들기</title>
+	
+	<meta name="author" content="unimun">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/unimun">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/unimun">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:unimunity@gmail.com">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=35" class="img-circle" />
+				hello world
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=150" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/">hello world</a>
+    </h3>
+</header>
+
+
+<div id="bio" class="text-center">
+	Your stylish, minimalist theme!
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/unimun">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/unimun">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:unimunity@gmail.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline">
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://pinterest.com/unimun">
+				<i class="fa fa-pinterest fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/unimun">
+				<i class="fa fa-linkedin fa-lg"></i>
+			</a>
+		</li>
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		<div class="page-header">
+  <h1>Python을 이용해 exe파일 만들기 </h1>
+</div>
+	
+<article>
+
+	<div class="col-sm-10">
+	 <span class="post-date">
+	   
+	   April 
+	   20th,
+	   
+	   2016
+	 </span>
+	  <div class="article_body">
+	  <p>#Python 2.7 환경 구축하기</p>
+
+<p>##Python 설치
+www.python.org에서 Python 2.7.9[^1.]를 다운로드 받아 설치한다.</p>
+
+<p>##setup Library 사용하기
+setup라이브러리는 c파일을 pyd형식으로 라이브러리화 하여 파이썬에서 사용할 수 있게 해주거나, py2exe를 이용해 exe파일로 배포할 수 있도록 해준다.
+하지만 파이썬 2.7.9가 Visual C++ 2008 Express[^2.]에서 컴파일되었기 때문에 VC++ 2008의 라이브러리를 설치해야한다.</p>
+
+<p>Python을 이용해 exe파일을 생성하기 위해서는 py2exe[^3.] 라이브러리가 필요하다.</p>
+
+<h3 id="c--4">C 모듈 만들기[^4.]</h3>
+
+<p>[^4.]: <a href="http://batsu05.egloos.com/v/839472">]바츠[™, “파이썬에서 C모듈을 이용하기”</a></p>
+
+<p>Python에서 사용할 C 모듈은 다음과 같이 만들 수 있다.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="lineno"> 1</span> <span class="c1">// mylib.c</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span> <span class="cp">#include &quot;Python.h&quot;</span>
+<span class="lineno"> 4</span> <span class="cp">#include &lt;stdio.h&gt;</span>
+<span class="lineno"> 5</span> 
+<span class="lineno"> 6</span>  
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span> <span class="k">static</span> <span class="n">PyObject</span> <span class="o">*</span><span class="n">ErrorObject</span><span class="p">;</span>
+<span class="lineno"> 9</span> 
+<span class="lineno">10</span>  
+<span class="lineno">11</span> 
+<span class="lineno">12</span> <span class="c1">// 실제 동작하는 함수</span>
+<span class="lineno">13</span> 
+<span class="lineno">14</span> <span class="k">static</span> <span class="n">PyObject</span><span class="o">*</span> <span class="nf">write_log</span><span class="p">(</span><span class="n">PyObject</span> <span class="o">*</span><span class="n">self</span><span class="p">,</span> <span class="n">PyObject</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="c1">// 인자는 이와같이 고정된다.</span>
+<span class="lineno">15</span> <span class="p">{</span>
+<span class="lineno">16</span>     <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">;</span>
+<span class="lineno">17</span>     <span class="kt">FILE</span> <span class="o">*</span><span class="n">fp</span><span class="p">;</span>
+<span class="lineno">18</span>     
+<span class="lineno">19</span>     <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">PyArg_ParseTuple</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="s">&quot;s&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">msg</span><span class="p">))</span>
+<span class="lineno">20</span>         <span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+<span class="lineno">21</span>     
+<span class="lineno">22</span>     <span class="n">fp</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">&quot;c:</span><span class="se">\\</span><span class="s">pylog.txt&quot;</span><span class="p">,</span> <span class="s">&quot;wt+&quot;</span><span class="p">);</span>
+<span class="lineno">23</span>     <span class="n">fprintf</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+<span class="lineno">24</span> 
+<span class="lineno">25</span>     <span class="n">fclose</span><span class="p">(</span><span class="n">fp</span><span class="p">);</span>
+<span class="lineno">26</span>     
+<span class="lineno">27</span>     <span class="k">return</span> <span class="n">Py_BuildValue</span><span class="p">(</span><span class="s">&quot;i&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>    
+<span class="lineno">28</span> <span class="p">}</span>
+<span class="lineno">29</span> <span class="cm">/* methods 구조체 배열에 지정되는 정보는 {&quot;실제사용할 메쏘드명&quot;, 메쏘드명에 대응하는 실제 동작하는 함수명, 인자 종류} */</span>
+<span class="lineno">30</span> 
+<span class="lineno">31</span> <span class="k">static</span> <span class="k">struct</span> <span class="n">PyMethodDef</span> <span class="n">methods</span><span class="p">[]</span> <span class="o">=</span>
+<span class="lineno">32</span> <span class="p">{</span>
+<span class="lineno">33</span>     <span class="p">{</span><span class="s">&quot;wlog&quot;</span><span class="p">,</span> <span class="n">write_log</span><span class="p">,</span> <span class="n">METH_VARARGS</span><span class="p">},</span>
+<span class="lineno">34</span>     <span class="p">{</span><span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">}</span>
+<span class="lineno">35</span> <span class="p">};</span>
+<span class="lineno">36</span> 
+<span class="lineno">37</span>  
+<span class="lineno">38</span> 
+<span class="lineno">39</span> <span class="c1">//</span>
+<span class="lineno">40</span> 
+<span class="lineno">41</span> <span class="kt">void</span> <span class="nf">initmylib</span><span class="p">()</span>
+<span class="lineno">42</span> <span class="p">{</span>
+<span class="lineno">43</span>     <span class="n">PyObject</span><span class="o">*</span> <span class="n">m</span><span class="p">;</span>
+<span class="lineno">44</span>    
+<span class="lineno">45</span> 
+<span class="lineno">46</span>    <span class="c1">// Py_InitModule(&quot;모듈명&quot;, 이모듈에 적용된 메쏘드들을 담을 구조체배열 포인터)</span>
+<span class="lineno">47</span>     <span class="n">m</span> <span class="o">=</span> <span class="n">Py_InitModule</span><span class="p">(</span><span class="s">&quot;mylib&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="p">);</span>
+<span class="lineno">48</span> 
+<span class="lineno">49</span> 
+<span class="lineno">50</span>     <span class="n">ErrorObject</span> <span class="o">=</span> <span class="n">Py_BuildValue</span><span class="p">(</span><span class="s">&quot;s&quot;</span><span class="p">,</span> <span class="s">&quot;error&quot;</span><span class="p">);</span>
+<span class="lineno">51</span> <span class="p">}</span></code></pre></figure>
+
+<p>위 c코드를 컴파일하기 위해 setup.py 모듈을 작성한다.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c"># setup.py</span>
+<span class="lineno"> 2</span> 
+<span class="lineno"> 3</span> <span class="kn">from</span> <span class="nn">distutils.core</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">Extension</span>
+<span class="lineno"> 4</span> 
+<span class="lineno"> 5</span> <span class="n">setup</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;mylib&quot;</span><span class="p">,</span>
+<span class="lineno"> 6</span>         <span class="n">version</span> <span class="o">=</span> <span class="s">&quot;1.0&quot;</span><span class="p">,</span>
+<span class="lineno"> 7</span>         <span class="n">description</span> <span class="o">=</span> <span class="s">&quot;print log&quot;</span><span class="p">,</span>
+<span class="lineno"> 8</span>         <span class="n">author</span> <span class="o">=</span> <span class="s">&quot;Samsjang&quot;</span><span class="p">,</span>
+<span class="lineno"> 9</span>         <span class="n">author_email</span> <span class="o">=</span> <span class="s">&quot;samsjang@cdnetworks.co.kr&quot;</span><span class="p">,</span>
+<span class="lineno">10</span>         <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;http://www.cdnetworks.co.kr&quot;</span><span class="p">,</span>
+<span class="lineno">11</span>         <span class="n">ext_modules</span> <span class="o">=</span> <span class="p">[</span><span class="n">Extension</span><span class="p">(</span><span class="s">&quot;mylib&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s">&quot;mylib.c&quot;</span><span class="p">])]</span>
+<span class="lineno">12</span>         <span class="p">)</span></code></pre></figure>
+
+<p>리눅스 및 윈도에서 아래와 같이 빌드하고 설치한다.</p>
+
+<pre><code>python setup.py install
+</code></pre>
+
+<p>위의 명령은 리눅스에서는 gcc를 호출하며, 윈도에서는 visual C++ 컴파일러가 구동되면서 빌드한 후 파이썬 디렉토리의 Lib/site-packages 디렉토리에 mylib.so 또는 mylib.pyd  파일이 생성된다.</p>
+
+<p>자 그럼 C모듈인 mylib 모듈을 실제 파이썬 코드에서 적용해보자.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># test.py</span>
+<span class="lineno">2</span> <span class="kn">import</span> <span class="nn">mylib</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>    
+<span class="lineno">5</span>     <span class="n">mylib</span><span class="o">.</span><span class="n">wlog</span><span class="p">(</span><span class="s">&#39;I love U&#39;</span><span class="p">)</span></code></pre></figure>
+
+<p>위의 결과는 C:\pylog.txt 파일에 “I love U” 라는 글을 남긴다.</p>
+
+<h3 id="exe---">exe 확장자 파일 생성하기</h3>
+<p>exe파일을 생성하기 위해서는 py2exe 라이브러리가 필요하다. cmd프로그램을 실행하지 않는 GUI기반 응용프로그램은 다음과 같이 setup 메소드의 windows 인자에 파일 명을 전달한다. console을 사용하는 경우에는 console로 대체된다.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># build.py</span>
+<span class="lineno">2</span> <span class="kn">from</span> <span class="nn">distutils.core</span> <span class="kn">import</span> <span class="n">setup</span>
+<span class="lineno">3</span> <span class="kn">import</span> <span class="nn">py2exe</span>
+<span class="lineno">4</span> 
+<span class="lineno">5</span> <span class="n">setup</span><span class="p">(</span><span class="n">windows</span><span class="o">=</span><span class="p">[</span><span class="s">&quot;test.py&quot;</span><span class="p">])</span></code></pre></figure>
+
+<p>아래와 같이 빌드한다.</p>
+
+<pre><code>python build.py py2exe
+</code></pre>
+
+<p>##wxPython 사용하기
+wxWidget기반 GUI 자유 소프트웨어인 wxPython을 사용하려면 wxPython[^5.] 라이브러리와 빌드 도구인 wcFormBuilder[^6.]를 설치해야한다.</p>
+
+
+	  </div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#tutorial-ref">
+					tutorial <span>(1)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#Windows Python-ref">
+					Windows Python <span>(1)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
+
+		<hr>
+
+		<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Python을 이용해 exe파일 만들기&via=unimun"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa" class="img-rounded author-image" />
+        <h4 class="section-title author-name">unimun</h4>
+        <p class="author-bio">Your stylish, minimalist theme!</p>
+      </section>
+    </div>
+
+    <div class="clearfix"></div>
+
+		<ul class="pager">
+		  
+		  <li class="previous"><a href="/2016/04/19/test.html" title="test title">&larr; Previous</a></li>
+		  
+		  
+			<li class="next disabled"><a>Next &rarr;</a>
+		  
+		</ul>
+
+		<hr>
+	</div>
+	
+	<div class="col-sm-2 sidebar-2">
+	
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; 2016 unimun with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl =
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'dbyll']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
