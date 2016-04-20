@@ -169,13 +169,15 @@
 	   2016
 	 </span>
 	  <div class="article_body">
-	  <p>#Python 2.7 환경 구축하기</p>
+	  <h1 id="python-27--">Python 2.7 환경 구축하기</h1>
 
-<p>##Python 설치
-www.python.org에서 Python 2.7.9[^1.]를 다운로드 받아 설치한다.</p>
+<h2 id="python-">Python 설치</h2>
 
-<p>##setup Library 사용하기
-setup라이브러리는 c파일을 pyd형식으로 라이브러리화 하여 파이썬에서 사용할 수 있게 해주거나, py2exe를 이용해 exe파일로 배포할 수 있도록 해준다.
+<p>www.python.org에서 Python 2.7.9[^1.]를 다운로드 받아 설치한다.</p>
+
+<h2 id="setup-library-">setup Library 사용하기</h2>
+
+<p>setup라이브러리는 c파일을 pyd형식으로 라이브러리화 하여 파이썬에서 사용할 수 있게 해주거나, py2exe를 이용해 exe파일로 배포할 수 있도록 해준다.
 하지만 파이썬 2.7.9가 Visual C++ 2008 Express[^2.]에서 컴파일되었기 때문에 VC++ 2008의 라이브러리를 설치해야한다.</p>
 
 <p>Python을 이용해 exe파일을 생성하기 위해서는 py2exe[^3.] 라이브러리가 필요하다.</p>
@@ -255,8 +257,7 @@ setup라이브러리는 c파일을 pyd형식으로 라이브러리화 하여 파
 
 <p>리눅스 및 윈도에서 아래와 같이 빌드하고 설치한다.</p>
 
-<pre><code>python setup.py install
-</code></pre>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="lineno">1</span> python setup.py install</code></pre></figure>
 
 <p>위의 명령은 리눅스에서는 gcc를 호출하며, 윈도에서는 visual C++ 컴파일러가 구동되면서 빌드한 후 파이썬 디렉토리의 Lib/site-packages 디렉토리에 mylib.so 또는 mylib.pyd  파일이 생성된다.</p>
 
@@ -271,6 +272,7 @@ setup라이브러리는 c파일을 pyd형식으로 라이브러리화 하여 파
 <p>위의 결과는 C:\pylog.txt 파일에 “I love U” 라는 글을 남긴다.</p>
 
 <h3 id="exe---">exe 확장자 파일 생성하기</h3>
+
 <p>exe파일을 생성하기 위해서는 py2exe 라이브러리가 필요하다. cmd프로그램을 실행하지 않는 GUI기반 응용프로그램은 다음과 같이 setup 메소드의 windows 인자에 파일 명을 전달한다. console을 사용하는 경우에는 console로 대체된다.</p>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno">1</span> <span class="c"># build.py</span>
@@ -281,11 +283,11 @@ setup라이브러리는 c파일을 pyd형식으로 라이브러리화 하여 파
 
 <p>아래와 같이 빌드한다.</p>
 
-<pre><code>python build.py py2exe
-</code></pre>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="lineno">1</span> python build.py py2exe</code></pre></figure>
 
-<p>##wxPython 사용하기
-wxWidget기반 GUI 자유 소프트웨어인 wxPython을 사용하려면 wxPython[^5.] 라이브러리와 빌드 도구인 wcFormBuilder[^6.]를 설치해야한다.</p>
+<h2 id="wxpython-">wxPython 사용하기</h2>
+
+<p>wxWidget기반 GUI 자유 소프트웨어인 wxPython을 사용하려면 wxPython[^5.] 라이브러리와 빌드 도구인 wcFormBuilder[^6.]를 설치해야한다.</p>
 
 
 	  </div>
